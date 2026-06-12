@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>RUBAS &amp; Co Versicherungsmakler Wien | Ungebunden gut versichert seit 1986</title>
+<meta name="description" content="Rubas & Co Versicherungsmaklergesellschaft m.b.H. – Ihr ungebundener Versicherungsmakler in Wien seit 1986. Versichern, Vorsorgen, Leasing und Service im Schadensfall. Ein Unternehmen im Verbund der IO-Gruppe.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="RUBAS & Co Versicherungsmakler Wien">
+<meta property="og:description" content="Ungebundener Versicherungsmakler in Wien seit 1986 – Versichern, Vorsorgen, Leasing, Schadenservice.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_AT">
+<meta property="og:url" content="https://www.rubas-versicherungsmakler.at/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+/* ============ IO Styleguide v2.3 ============ */
+:root{
+  --io-blau:#1C5C85; --blau-dunkel:#0F2E41; --cyan:#19C9F2; --cyan-dunkel:#18AACC;
+  --hellblau:#D8F6FD; --hellgrau:#F7F7F7; --text-dk:#2E2D2D; --text-mid:#525252;
+  --muted:#8A8F96; --rule:#DADDE2; --paper:#FFFFFF;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:"Titillium Web","Titillium","Roboto","Arial",sans-serif;
+  font-size:18px;font-weight:300;line-height:150%;letter-spacing:0.02em;
+  color:var(--text-dk);background:var(--paper);
+}
+h1{font-size:40px;font-weight:600;color:var(--io-blau);line-height:120%;}
+h2{font-size:22px;font-weight:600;color:var(--io-blau);padding-bottom:8px;}
+h3{font-size:18px;font-weight:600;color:var(--io-blau);}
+a{color:inherit;text-decoration:none;}
+a:hover{color:var(--cyan);text-decoration:underline;}
+img{max-width:100%;display:block;}
+.container{max-width:1200px;margin:0 auto;padding:0 40px;}
+section{padding:80px 0;}
+.bg-lightgrey{background:var(--hellgrau);}
+.bg-lightblue{background:var(--hellblau);}
+.bg-darkblue{background:var(--io-blau);color:#fff;}
+.bg-darkblue h2,.bg-darkblue h3,.bg-darkblue a{color:#fff;}
+
+/* Buttons — Cyan-Pille */
+.bt-default{
+  display:inline-block;border-radius:99999px;background:var(--cyan);
+  border:3px solid var(--cyan);color:var(--io-blau);font-size:18px;font-weight:600;
+  min-width:168px;min-height:32px;padding:5px 22px;text-align:center;cursor:pointer;
+}
+.bt-default:hover{background:#fff;color:var(--io-blau);text-decoration:none;}
+
+/* Header */
+header{
+  position:sticky;top:0;z-index:100;background:#fff;
+  box-shadow:1px 3px 7px rgba(0,0,0,.15);
+}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:80px;}
+.brand{display:flex;align-items:center;gap:16px;}
+.brand img{height:50px;width:auto;}
+.brand .cobrand{
+  font-size:12px;color:var(--muted);border-left:1px solid var(--rule);
+  padding-left:16px;line-height:135%;
+}
+nav ul{display:flex;gap:28px;list-style:none;}
+nav a{font-size:17px;font-weight:600;line-height:100%;padding-bottom:6px;}
+nav a:hover{text-decoration:none;color:var(--cyan);}
+nav a.active{border-bottom:3px solid var(--cyan);}
+.burger{display:none;background:none;border:none;font-size:28px;color:var(--io-blau);cursor:pointer;}
+
+/* Hero */
+.hero{position:relative;height:590px;background:
+  linear-gradient(rgba(15,46,65,.45),rgba(15,46,65,.45)),
+  url('https://www.rubas-versicherungsmakler.at/images/uploads/slider/6.jpg') center/cover no-repeat;}
+.hero-box{
+  position:absolute;left:40px;bottom:-85px;background:#fff;border-radius:30px;
+  box-shadow:1px 3px 7px rgba(0,0,0,.15);padding:36px 44px;max-width:560px;
+}
+.hero-box h1{margin-bottom:8px;}
+.hero-box p{margin-bottom:20px;color:var(--text-mid);}
+.hero-spacer{height:85px;}
+
+/* Karten-Grids */
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
+.card{background:#fff;border-radius:30px;padding:32px;box-shadow:1px 3px 7px rgba(0,0,0,.15);}
+.card h3{margin-bottom:10px;}
+.icon{width:48px;height:48px;margin-bottom:16px;stroke:var(--io-blau);stroke-width:1.7;fill:none;}
+
+/* Leistungs-Chips */
+.chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px;}
+.chip{background:var(--hellblau);border-radius:99999px;padding:6px 20px;font-size:16px;font-weight:400;}
+
+/* Zweispaltige Sektion */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
+.split img{border-radius:30px;box-shadow:1px 3px 7px rgba(0,0,0,.15);}
+
+/* Kontakt-Overlapbox */
+.contact-flex{display:flex;gap:48px;flex-wrap:wrap;}
+.contact-flex>div{flex:1;min-width:220px;}
+.contact-label{font-size:14px;text-transform:uppercase;letter-spacing:.15em;color:var(--cyan);font-weight:600;margin-bottom:6px;}
+
+/* Footer */
+footer{background:var(--blau-dunkel);color:#fff;padding:56px 0 24px;}
+footer .cols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;margin-bottom:40px;}
+footer h3{color:var(--cyan);font-size:14px;text-transform:uppercase;letter-spacing:.15em;margin-bottom:14px;}
+footer ul{list-style:none;}
+footer li{font-size:15px;line-height:235%;}
+footer a{color:#fff;}
+footer .legal{border-top:1px solid rgba(255,255,255,.2);padding-top:20px;font-size:12px;color:#85C5DB;text-align:center;}
+.io-badge{display:flex;align-items:center;gap:14px;margin-top:18px;background:#fff;border-radius:16px;padding:10px 16px;width:fit-content;}
+.io-badge img{height:34px;}
+.io-badge span{font-size:13px;color:var(--text-mid);line-height:130%;}
+
+/* Responsive */
+@media (max-width:959px){
+  .grid-3,.grid-4{grid-template-columns:repeat(2,1fr);}
+  .split{grid-template-columns:1fr;}
+  nav ul{display:none;}
+  nav ul.open{display:flex;flex-direction:column;position:absolute;top:80px;right:0;background:#fff;padding:24px 40px;box-shadow:1px 3px 7px rgba(0,0,0,.15);}
+  .burger{display:block;}
+  .bt-default{padding:3px 16px;border-width:2px;}
+}
+@media (max-width:599px){
+  .container{padding:0 15px;}
+  h1{font-size:30px;}
+  .hero{height:420px;}
+  .hero-box{left:15px;right:15px;padding:26px;}
+  .grid-3,.grid-4{grid-template-columns:1fr;}
+  footer .cols{grid-template-columns:1fr;}
+}
+/* Dark Mode */
+@media (prefers-color-scheme:dark){
+  body{background:#000;color:#F7F7F7;}
+  h1,h2,h3{color:var(--cyan);}
+  .bg-lightgrey{background:#242424;}
+  .bg-lightblue{background:var(--blau-dunkel);}
+  header,.card,.hero-box{background:#242424;}
+  .hero-box p{color:#F7F7F7;}
+  .chip{background:var(--blau-dunkel);}
+  .bg-darkblue h2,.bg-darkblue h3{color:#fff;}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav-inner">
+    <div class="brand">
+      <a href="#top"><img src="https://www.rubas-versicherungsmakler.at/images/site/logo.png" alt="RUBAS & Co Versicherungsmakler"></a>
+      <span class="cobrand">Ein Unternehmen im Verbund<br>der <strong>IO-Gruppe</strong> · iois.at</span>
+    </div>
+    <nav>
+      <button class="burger" aria-label="Menü öffnen" onclick="document.querySelector('nav ul').classList.toggle('open')">☰</button>
+      <ul>
+        <li><a href="#leistungen">Leistungen</a></li>
+        <li><a href="#unternehmen">Unternehmen</a></li>
+        <li><a href="#schadensfall">Im Schadensfall</a></li>
+        <li><a href="#kontakt" class="active">Kontakt</a></li>
+        <li><a href="https://www.rubas-aerztemakler.at/">Ärztemakler</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- Hero -->
+<div class="hero">
+  <div class="container" style="position:relative;height:100%;">
+    <div class="hero-box">
+      <h1>Ihr Versicherungsmakler in Wien. Seit 1986.</h1>
+      <p>Wir vertreten Ihre Interessen gegenüber den Versicherern – ungebunden, klar und persönlich.</p>
+      <a class="bt-default" href="#kontakt">Versicherungscheck</a>
+    </div>
+  </div>
+</div>
+<div class="hero-spacer"></div>
+
+<!-- Drei Säulen -->
+<section>
+  <div class="container grid-3">
+    <div>
+      <svg class="icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
+      <h2>Risikoanalyse</h2>
+      <p>Gemeinsam mit Ihnen identifizieren und bewerten wir Ihre privaten und betrieblichen Risiken.</p>
+    </div>
+    <div>
+      <svg class="icon" viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/></svg>
+      <h2>Risikoabsicherung</h2>
+      <p>Wir prüfen Ihre bestehenden Verträge und zeigen Ihnen, ob Ihre Deckung zu Ihrem Bedarf passt – mit klaren Antworten statt Kleingedrucktem.</p>
+    </div>
+    <div>
+      <svg class="icon" viewBox="0 0 24 24"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg>
+      <h2>Service im Schadensfall</h2>
+      <p>Ein Schaden ist schnell passiert. Wir übernehmen die Abwicklung und sind bei allen Schritten an Ihrer Seite.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Unternehmen -->
+<section class="bg-lightgrey" id="unternehmen">
+  <div class="container split">
+    <div>
+      <h2>Dafür steht RUBAS &amp; Co: Ungebunden auf Ihrer Seite</h2>
+      <p>Seit 1986 vertreten wir die Interessen und Rechte unserer Kundinnen und Kunden gegenüber den Versicherungsgesellschaften. Als ungebundener Versicherungsmakler richten wir unsere gesamte Aufmerksamkeit auf Ihre Ziele – nicht auf die eines Versicherers.</p>
+      <p style="margin-top:14px;">Im Verbund der IO-Gruppe verbinden wir vier Jahrzehnte Maklererfahrung mit den digitalen Services und der Marktstärke von <a href="https://www.iois.at" style="color:var(--io-blau);font-weight:600;">IO Insurance Brokers</a>. Für Sie bedeutet das: breite Produktpalette, transparente Beratung, ein Ansprechpartner.</p>
+    </div>
+    <img src="https://www.rubas-versicherungsmakler.at/images/uploads/slider/3.jpg" alt="Beratung bei RUBAS & Co Versicherungsmakler in Wien">
+  </div>
+</section>
+
+<!-- Leistungen -->
+<section id="leistungen">
+  <div class="container">
+    <h2>Unsere Leistungen</h2>
+    <p>Von der Angebotseinholung bis zum Abschluss – wir begleiten Sie in allen Versicherungs- und Vorsorgefragen.</p>
+    <div class="grid-4" style="margin-top:36px;">
+      <div class="card">
+        <h3>Versichern</h3>
+        <p style="font-size:16px;">Absicherung für Privatpersonen, Betrieb und Ordination – vom Haushalt bis zur Betriebshaftpflicht.</p>
+        <div class="chips">
+          <span class="chip">Haushalt</span><span class="chip">Eigenheim</span><span class="chip">KFZ</span><span class="chip">Rechtsschutz</span><span class="chip">Betrieb &amp; Ordination</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Vorsorgen &amp; Veranlagen</h3>
+        <p style="font-size:16px;">Pension, Berufsunfähigkeit und Vermögensaufbau – Vorsorgelösungen, die zu Ihrer Lebensphase passen.</p>
+        <div class="chips">
+          <span class="chip">Pensionsvorsorge</span><span class="chip">Berufsunfähigkeit</span><span class="chip">Veranlagung</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Spezialversicherungen</h3>
+        <p style="font-size:16px;">Reise, Drohne, Boot oder Cyber – für besondere Risiken vermitteln wir passende Spezialdeckungen.</p>
+        <div class="chips">
+          <span class="chip">Reiseversicherung</span><span class="chip">Drohne</span><span class="chip">Cyber</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Leasing &amp; Finanzierung</h3>
+        <p style="font-size:16px;">Über unsere Kooperationspartner unterstützen wir Sie bei Leasing und Finanzierungsfragen – aus einer Hand.</p>
+        <div class="chips">
+          <span class="chip">KFZ-Leasing</span><span class="chip">Finanzierung</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Schadensfall -->
+<section class="bg-darkblue" id="schadensfall">
+  <div class="container split">
+    <div>
+      <h2>Im Schadensfall an Ihrer Seite</h2>
+      <p>Melden Sie Ihren Schaden direkt bei uns – wir kümmern uns um die Abwicklung mit dem Versicherer und halten Sie auf dem Laufenden.</p>
+      <p style="margin-top:18px;font-size:24px;font-weight:600;">
+        <a href="tel:+4313100603">+43 1 310 06 03</a><br>
+        <a href="mailto:office@rubas.co.at" style="font-size:18px;font-weight:400;">office@rubas.co.at</a>
+      </p>
+      <a class="bt-default" href="#kontakt" style="margin-top:20px;">Schaden melden</a>
+    </div>
+    <div>
+      <h3>Notfallnummern</h3>
+      <p style="font-size:16px;">Euro-Notruf <strong>112</strong> · Rettung <strong>144</strong> · Feuerwehr <strong>122</strong> · Polizei <strong>133</strong><br>
+      ÖAMTC Pannenhilfe <strong>120</strong> · ARBÖ <strong>123</strong><br>
+      Sperr-Hotline Karten <strong>+43 1 204 88 00</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- Kontakt -->
+<section id="kontakt">
+  <div class="container">
+    <h2>Nehmen Sie Kontakt mit uns auf</h2>
+    <p>Ob Versicherungscheck, Angebot oder eine Frage zu Ihrem Vertrag – wir freuen uns auf Ihre Nachricht.</p>
+    <div class="contact-flex" style="margin-top:36px;">
+      <div>
+        <p class="contact-label" style="color:var(--io-blau);">Telefon</p>
+        <p><a href="tel:+4313100603">+43 1 310 06 03</a></p>
+      </div>
+      <div>
+        <p class="contact-label" style="color:var(--io-blau);">E-Mail</p>
+        <p><a href="mailto:office@rubas.co.at">office@rubas.co.at</a></p>
+      </div>
+      <div>
+        <p class="contact-label" style="color:var(--io-blau);">Vor Ort</p>
+        <p><a href="https://www.google.com/maps?q=Neustiftgasse+3%2F4,+1070+Wien" rel="noopener">Neustiftgasse 3/4<br>1070 Wien</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="cols">
+      <div>
+        <h3>RUBAS &amp; Co</h3>
+        <p style="font-size:15px;">Rubas &amp; Co Versicherungsmaklergesellschaft m.b.H.<br>
+        Versicherungsmakler &amp; Berater in Versicherungsangelegenheiten<br>
+        Neustiftgasse 3/4, 1070 Wien</p>
+        <div class="io-badge">
+          <img src="https://www.iois.at/logo/iois_logo.png" alt="IO Insurance Brokers GmbH">
+          <span>Ein Unternehmen im Verbund<br>der IO-Gruppe · <a href="https://www.iois.at" style="color:var(--io-blau);">www.iois.at</a></span>
+        </div>
+      </div>
+      <div>
+        <h3>Leistungen</h3>
+        <ul>
+          <li><a href="#leistungen">Versichern</a></li>
+          <li><a href="#leistungen">Vorsorgen &amp; Veranlagen</a></li>
+          <li><a href="#leistungen">Leasing</a></li>
+          <li><a href="#schadensfall">Im Schadensfall</a></li>
+          <li><a href="https://www.rubas-aerztemakler.at/">RUBAS Ärztemakler</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Rechtliches</h3>
+        <ul>
+          <li><a href="https://www.rubas-versicherungsmakler.at/impressum.html">Impressum</a></li>
+          <li><a href="https://www.rubas-versicherungsmakler.at/datenschutz.html">Datenschutz</a></li>
+          <li><a href="https://www.rubas-versicherungsmakler.at/datenschutzrichtlinien-der-produktpartner.html">Datenschutz Produktpartner</a></li>
+          <li><a href="https://www.rubas-versicherungsmakler.at/newsletter.html">Newsletter</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="legal">© 2026 Rubas &amp; Co Versicherungsmaklergesellschaft m.b.H. · Neustiftgasse 3/4, 1070 Wien · Tel. +43 1 310 06 03 · office@rubas.co.at</p>
+  </div>
+</footer>
+
+</body>
+</html>
