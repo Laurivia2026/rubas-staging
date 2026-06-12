@@ -56,7 +56,10 @@ header{
 }
 .nav-inner{display:flex;align-items:center;justify-content:space-between;height:80px;}
 .brand{display:flex;align-items:center;gap:16px;}
-.brand img{height:50px;width:auto;}
+.brand svg{height:50px;width:auto;}
+.brand .cobrand img{height:20px;width:auto;margin-top:4px;}
+.logo-word{fill:var(--io-blau);}
+.logo-sub{fill:var(--text-mid);}
 .brand .cobrand{
   font-size:12px;color:var(--muted);border-left:1px solid var(--rule);
   padding-left:16px;line-height:135%;
@@ -138,6 +141,9 @@ footer .legal{border-top:1px solid rgba(255,255,255,.2);padding-top:20px;font-si
   .hero-box p{color:#F7F7F7;}
   .chip{background:var(--blau-dunkel);}
   .bg-darkblue h2,.bg-darkblue h3{color:#fff;}
+  .logo-word{fill:var(--cyan);}
+  .logo-sub{fill:#B5BBC2;}
+  .cobrand img{background:#fff;padding:2px 6px;border-radius:6px;}
 }
 </style>
 </head>
@@ -146,8 +152,8 @@ footer .legal{border-top:1px solid rgba(255,255,255,.2);padding-top:20px;font-si
 <header>
   <div class="container nav-inner">
     <div class="brand">
-      <a href="#top"><img src="https://www.rubas-versicherungsmakler.at/images/site/logo.png" alt="RUBAS & Co Versicherungsmakler"></a>
-      <span class="cobrand">Ein Unternehmen im Verbund<br>der <strong>IO-Gruppe</strong> · iois.at</span>
+      <a href="#top" aria-label="RUBAS & Co – zur Startseite"><svg class="brand-logo" viewBox="0 0 350 64" role="img" aria-label="RUBAS & Co Versicherungsmakler"><polygon points="0,56 21,14 42,56" fill="#1C5C85"/><polygon points="47,14 68,56 89,14" fill="#19C9F2"/><polygon points="96,56 117,14 138,56" fill="none" stroke="#18AACC" stroke-width="4"/><text x="154" y="38" class="logo-word" font-family="'Titillium Web',sans-serif" font-weight="600" font-size="31">RUBAS &amp; CO</text><text x="155" y="58" class="logo-sub" font-family="'Titillium Web',sans-serif" font-weight="400" font-size="14" letter-spacing="0.8">Versicherungsmakler</text></svg></a>
+      <span class="cobrand">Ein Unternehmen der <strong>IO-Gruppe</strong><br><img src="https://www.iois.at/logo/iois_logo.png" alt="IO Insurance Brokers GmbH"></span>
     </div>
     <nav>
       <button class="burger" aria-label="Menü öffnen" onclick="document.querySelector('nav ul').classList.toggle('open')">☰</button>
